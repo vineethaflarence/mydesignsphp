@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <title>Student Template</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .roombtn {
+            width: 150px;
+            height: 150px;
+            background-color: #1867a3;
+            color: white;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            color: white;
+        }
+
+        .card {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row p-3 ml-3">
+            <button type="button" class="roombtn" data-toggle="collapse" data-target="#content1">HB1B233/203</button>&nbsp;
+            <button type="button" class="roombtn" data-toggle="collapse" data-target="#content2">HB1B233/204</button>&nbsp;
+            <button type="button" class="roombtn" data-toggle="collapse" data-target="#content3">HB1B233/205</button>
+        </div>
+        <div class="collapse row p-3 ml-3" id="content1">
+            <div class="card card-body">
+                <h1>Room Details 1</h1>
+                <p>This is the room details for HB1B233/203.</p>
+            </div>
+        </div>
+        <div class="collapse row p-3 ml-3" id="content2">
+            <div class="card card-body">
+                <h1>Room Details 2</h1>
+                <p>This is the room details for HB1B233/204.</p>
+            </div>
+        </div>
+        <div class="collapse row p-3 ml-3" id="content3">
+            <div class="card card-body">
+                <h1>Room Details 3</h1>
+                <p>This is the room details for HB1B233/205.</p>
+            </div>
+        </div>
+        <div class="row p-3 ml-3">
+            <button type="button" class="roombtn" data-toggle="collapse" data-target="#content4">HB1B233/206</button>&nbsp;
+            <button type="button" class="roombtn" data-toggle="collapse" data-target="#content5">HB1B233/207</button>&nbsp;
+            <button type="button" class="roombtn" data-toggle="collapse" data-target="#content6">HB1B233/208</button>&nbsp;
+        </div>
+        <div class="collapse row p-3 ml-3" id="content4">
+            <div class="card card-body">
+                <h1>Room Details 4</h1>
+                <p>This is the room details for HB1B233/206.</p>
+            </div>
+        </div>
+        <div class="collapse row p-3 ml-3" id="content5">
+            <div class="card card-body">
+                <h1>Room Details 5</h1>
+                <p>This is the room details for HB1B233/207.</p>
+            </div>
+        </div>
+        <div class="collapse row p-3 ml-3" id="content6">
+            <div class="card card-body">
+                <h1>Room Details 6</h1>
+                <p>This is the room details for HB1B233/208.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.roombtn').click(function () {
+                var target = $(this).data('target');
+                $('.collapse').not(target).collapse('hide');
+            });
+        });
+    </script>
+</body>
+
+</html>

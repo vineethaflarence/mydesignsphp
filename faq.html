@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+  background-color: #d6d6d6;
+  color: #000000;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin:10px;
+  font-weight:bold;
+}
+
+.active, .accordion:hover {
+  background-color: #d6d6d6; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2 class="text-align:center;">FAQ</h2>
+
+<button class="accordion">When will the PGEE application portal open ?</button>
+<div class="panel">
+  <p> Generally, the PGEE application portal is available in the month of February every year.</p>
+</div>
+
+<button class="accordion">Is there any form correction facility provided by IIITH PGEE ?</button>
+<div class="panel">
+  <p>No, there is no form correction facility available. Candidates are advised to fill the form correctly in one go so that there candidature doesn’t get cancelled.</p>
+</div>
+
+<button class="accordion">What are the scanned copies required while filling the application form ?</button>
+<div class="panel">
+  <p>Candidates need to upload the copy of : Resume and passport size photograph</p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>

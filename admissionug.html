@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@900&display=swap" rel="stylesheet">
+    <title>Student Template</title>
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <!-- Custom CSS -->
+    <style>
+        .img-bar-top {
+            height: 21px;
+            vertical-align: top;
+            background-color: rgb(0, 59, 120);
+        }
+        
+        .ug-main .img-bar {
+            height: 18px;
+            text-align: -webkit-left;
+            vertical-align: top;
+            background-color: rgb(204, 204, 204);
+        }
+        
+        .hexagon {
+            position: relative;
+            display: inline-block;
+            margin: 0 10px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .hexagon img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .hexagon-inner {
+            background-color: rgb(90, 90, 92);
+            width: 100%;
+            height: 50%;
+            position: absolute;
+            top: 25%;
+            left: 0;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        }
+        .hexagon:hover{
+            filter: brightness(1.50);
+        }
+
+        .hexagon-content {
+            color: gold;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            position: absolute;
+            top: 25%;
+            left: 0;
+            width: 100%;
+        }
+
+        .hexagon-content small {
+            color: white;
+            font-weight: normal;
+            font-size: 14px;
+            padding: 10px;
+            display: block;
+        }
+
+        .hexagon-content h5 {
+            color: lightgreen;
+            font-weight: bold;
+            font-size: 25px;
+            margin-top: -10px;
+        }
+
+        /* Add border to the whole screen */
+        body {
+            border: 2px solid lightgray;
+        }
+        .important_note{
+            background-color:#ececec;
+            padding:10px;
+            width:100%;
+        }
+        .dual-program{
+           background-color: rgb(239, 242, 245);
+           width:100%;
+        }
+        .heading{
+            font-size:30px;
+        }
+        .responsive {
+            max-width: 100%;
+            height: auto;
+            padding: 0 15px;
+        }
+
+        .gallery {
+            display: inline-block;
+            margin: 10px;
+            
+        }
+
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .desc {
+            padding: 15px;
+            text-align: center;
+        }
+
+        /* Add custom styles here */
+        .dual-program {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .heading {
+            color: #333;
+        }
+
+        .info {
+            color:blueviolet;
+            font-size:bold;
+            text-decoration: none;
+        }
+
+        .info:hover {
+            color:blueviolet;
+            text-decoration: underline;
+        }
+        .card{
+            border: 1px solid lightgray;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="ug-main mt-4">
+        <div class="bd-main">
+            <div class="bd-cont container">
+                <div class="row">
+                    <div class="bg-ss">
+                        <div class="top-img">
+                            <div class="img-bar-top"></div>
+                            <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/banner.png" alt="Undergraduate Admissions" width="100%" title="Undergraduate Admissions" class="Undergraduate-admissions-img">
+                            <div class="img-bar"></div>
+                            <div class="img-bar-top"></div>
+                        </div>
+                        <div class="container" style="border:2px solid lightgray;">
+                            <div class="row justify-content-center mt-5">
+                                <!-- Top Row -->
+                                <div class="col-md-auto">
+                                    <div class="hexagon">
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/gray-e1707462655328.png"style="width:180px;">
+                                        <div style="background-color:rgb(90, 90, 92);width:180px;height:107px;text-align:center;margin-top:0%;">
+                                            <h4 style="color:gold;text-align:center;font-size:20px;font-weight:bold;">JEE<br>
+                                                <small style="color:white; font-weight:normal; font-size:14px;padding:10px;">
+                                                    For single degree through JEE (Mains)    </small>
+                                                <br>
+                                                <h5 style="color:lightgreen;font-weight:bold;font-size:25px;margin-top:-10px;text-align:center;">Opens Soon   </h5>                                
+                                            </h4>
+                                        </div>
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/gray1-e1707462629563.png" style="width:180px;margin-top:0%;">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto">
+                                    <div class="hexagon">
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/purple-e1707462712676.png"style="width:180px;">
+                                        <div style="background: rgb(113, 84, 158);width:180px;height:107px;text-align:center;margin-top:0%;">
+                                            <h4 style="color:gold;text-align:center;font-size:20px;font-weight:bold;">SPEC<br>
+                                                <small style="color:white; font-weight:normal; font-size:14px;padding:10px;">
+                                                    Special Channel of Admission</small>
+                                                <br />
+                                                <h5 style="color:lightgreen;font-weight:bold;font-size:25px;margin-top:-10px;text-align:center;">Open</h5>                                
+                                            </h4>
+                                        </div>
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/purple1-e1707462691973.png" style="width:180px;margin-top:0%;">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto">
+                                    <div class="hexagon">
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/orange-1-e1707462786211.png"style="width:180px;">
+                                        <div style="background: rgb(250, 87, 27);width:180px;height:107px;text-align:center;margin-top:0%;">
+                                            <h4 style="color:gold;text-align:center;font-size:20px;font-weight:bold;">DASA<br>
+                                                <small style="color:white; font-weight:normal; font-size:14px;padding:10px;">
+                                                    Special Channel of Admission</small>
+                                                <br />
+                                                <h5 style="color:lightgreen;font-weight:bold;font-size:25px;margin-top:-10px;text-align:center;">Open</h5>                                
+                                            </h4>
+                                        </div>
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/orange1-e1707462743814.png" style="width:180px;margin-top:-0%;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row justify-content-center ">
+                                <!-- Bottom Row -->
+                                <div class="col-md-auto">
+                                    <div class="hexagon">
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/blue1-e1707462842477.png"style="width:180px;">
+                                        <div style="background: rgb(21, 152, 188);width:180px;height:107px;text-align:center;margin-top:0%;">
+                                            <h4 style="color:gold;text-align:center;font-size:20px;font-weight:bold;">UGEE<br>
+                                                <small style="color:white; font-weight:normal; font-size:14px;padding:10px;">
+                                                    Undergraduate Entrance Exam</small>
+                                                <br />
+                                                <h5 style="color:lightgreen;font-weight:bold;font-size:25px;margin-top:-10px;text-align:center;">Open</h5>                                
+                                            </h4>
+                                        </div>
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/blue-e1707462863223.png" style="width:180px;margin-top:-0%;">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto">
+                                    <div class="hexagon">
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/pink1-e1707463107351.png"style="width:180px;">
+                                        <div style="background: rgb(231, 29, 102);width:180px;height:107px;text-align:center;margin-top:0%;">
+                                            <h4 style="color:gold;text-align:center;font-size:20px;font-weight:bold;">LEEE<br>
+                                                <small style="color:white; font-weight:normal; font-size:14px;padding:10px;">
+                                                    Lateral Entry Entrance Exam</small>
+                                                <br />
+                                                <h5 style="color:lightgreen;font-weight:bold;font-size:25px;margin-top:-10px;text-align:center;">Opens Soon</h5>                                
+                                            </h4>
+                                        </div>
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/pink-e1707463126630.png" style="width:180px;margin-top:-0%;">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto">
+                                    <div class="hexagon">
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/green1-e1707463279249.png"style="width:180px;">
+                                        <div style="background: rgb(56, 168, 78);width:180px;height:107px;text-align:center;margin-top:0%;">
+                                            <h4 style="color:gold;text-align:center;font-size:20px;font-weight:bold;">OLYMPIAD<br>                          
+                                                <small style="color:white; font-weight:normal; font-size:14px;padding:10px;margin-top:20px;">
+                                                    For olympiad winners</small>
+                                                <br>
+                                                <h5 style="color:lightgreen;font-weight:bold;font-size:25px;margin-top:-5px;text-align:center;">Opens Soon</h5>                                
+                                            </h4>
+                                        </div>
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/green.png" style="width:180px;margin-top:-0%;">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-auto">
+                                    <div class="hexagon">
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2024/02/blue1-e1707462842477-2.png"style="width:180px;">
+                                        <div style="background-color:rgb(92, 123, 170);width:180px;height:107px;text-align:center;margin-top:0%;">
+                                            <h4 style="color:gold;text-align:center;font-size:20px;font-weight:bold;">BOARDS<br>
+                                                <small style="color:white; font-weight:normal; font-size:14px;padding:10px;">
+                                                    Admission through BOARDS Scores</small>
+                                                <br />
+                                                <h5 style="color:lightgreen;font-weight:bold;font-size:25px;margin-top:-10px;text-align:center;">Opens Soon</h5>                                
+                                            </h4>
+                                        </div>
+                                        <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2024/02/blue-e1707462863223-2-2.png" style="width:180px;margin-top:-0%;">
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="important_note mt-5">
+                            <p class="p-3"><b>Important Note:</b><br>
+                                All admissions to IIIT Hyderabad are handled directly through the portals on our website. We do NOT have any other companies or online portals representing us and providing indirect admission services. Any claim(s) by such companies is completely false.</p>
+                        </div>
+                        <div class="dual-program mt-5">
+                            <h1 class="heading p-3">CORE DUAL DEGREE PROGRAMMES</h1>
+                            <div class="row justify-content-center">
+                                <div class="col-md-3">
+                                    <div class="responsive">
+                                        <div class="gallery">
+                                            <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/Electronics-Communication-Engineering-Program.png" alt="Cinque Terre">
+                                            <div class="desc m-2">
+                                                <a target="_blank" href="https://www.youtube.com/watch?v=9q5rvGVYN9c" class="info" style="font-weight:bold;">B.Tech and Master of Science in Electronics & Communication Engineering/Computer Science Engineering by Research</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="responsive">
+                                        <div class="gallery">
+                                            <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/Science-in-Computational-linguistics-by-Research.png" alt="Cinque Terre">
+                                            <div class="desc m-2">
+                                                <a target="_blank" href="https://www.youtube.com/watch?v=yzMd8Sbz8SI" class="info" style="font-weight:bold;">B.Tech in Computer Science & Master of Science in Computational Linguistics by Research</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="responsive">
+                                        <div class="gallery">
+                                            <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/Computational-Natural-Sciences-by-Research-Dual-Degree.png" alt="Cinque Terre">
+                                            <div class="desc m-2">
+                                                <a target="_blank" href="https://www.youtube.com/watch?v=KuJc3pEWroo" class="info" style="font-weight:bold;">B.Tech in Computer Science & Master of Science in Computational Natural Sciences by Research</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="responsive">
+                                        <div class="gallery">
+                                            <img src="https://ugadmissions.iiit.ac.in/wp-content/uploads/2021/02/Computing-Human-Sciences-by-Research.png" alt="Cinque Terre">
+                                            <div class="desc m-2">
+                                                <a target="_blank" href="https://youtu.be/ffBvi4FUB3A" class="info" style="font-weight:bold;">B.Tech in Computer Science & Master of Science in Computing & Human Sciences by Research</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box m-5">
+                            <div class="row">
+<div class=" card col-md-3 m-4  p-2 text-center">
+    <a href="https://ugadmissions.iiit.ac.in/fee-jee-spec/" style="color:blueviolet;font-weight:bold;">Fee for the Academic Year 2024-25 - Single Degree</a>
+</div>
+<div class=" card col-md-3 m-4 p-2 text-center">
+    <a href="https://ugadmissions.iiit.ac.in/ugee-oly-kvpy-leee/" style="color:blueviolet;font-weight:bold;">Fee for the Academic Year 2024-25 - Dual Degree</a>
+</div>
+<div class=" card col-md-3 m-4 p-2 text-center">
+    <a href="https://ugadmissions.iiit.ac.in/financial-assistance/" style="color:blueviolet;font-weight:bold;">Financial Assistance</a>
+</div>
+</div>                       
+</div>
+         </div>           </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
